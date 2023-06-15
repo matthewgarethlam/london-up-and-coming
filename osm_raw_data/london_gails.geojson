@@ -1,0 +1,1852 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-05-11T09:28:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/67555362",
+        "addr:city": "London",
+        "addr:housenumber": "1",
+        "addr:postcode": "NW3 2PT",
+        "addr:street": "South End Road",
+        "addr:suburb": "Hampstead",
+        "amenity": "cafe",
+        "building:part": "retail",
+        "level": "0",
+        "name": "Gail's"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1657984,
+              51.5541104
+            ],
+            [
+              -0.1657662,
+              51.5540381
+            ],
+            [
+              -0.1656902,
+              51.55405
+            ],
+            [
+              -0.1656623,
+              51.5540783
+            ],
+            [
+              -0.1656828,
+              51.5541303
+            ],
+            [
+              -0.1657984,
+              51.5541104
+            ]
+          ]
+        ]
+      },
+      "id": "way/67555362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/72570665",
+        "addr:city": "London",
+        "addr:housename": "Unicorn House",
+        "addr:postcode": "NW10 5RQ",
+        "addr:street": "Station Terrace",
+        "building": "yes",
+        "fhrs:id": "533202",
+        "fhrs:local_authority_id": "52991",
+        "name": "Gail's",
+        "shop": "bakery",
+        "source:addr": "FHRS Open Data"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2194257,
+              51.5343155
+            ],
+            [
+              -0.2193259,
+              51.5341876
+            ],
+            [
+              -0.2192296,
+              51.5342167
+            ],
+            [
+              -0.2193294,
+              51.5343446
+            ],
+            [
+              -0.219408,
+              51.5343208
+            ],
+            [
+              -0.2194257,
+              51.5343155
+            ]
+          ]
+        ]
+      },
+      "id": "way/72570665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/97966888",
+        "addr:housenumber": "75",
+        "addr:street": "Salusbury Road",
+        "building": "yes",
+        "contact:email": "qp@gailsbread.co.uk",
+        "contact:phone": "+44 20 7625 0068",
+        "contact:website": "https://gailsbread.co.uk/bakeries/queens-park/",
+        "name": "Gail's",
+        "opening_hours": "Mo-Su 06:30-19:00",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2048061,
+              51.5355209
+            ],
+            [
+              -0.2050269,
+              51.5354474
+            ],
+            [
+              -0.2049869,
+              51.5353895
+            ],
+            [
+              -0.2047015,
+              51.5354876
+            ],
+            [
+              -0.2048146,
+              51.5355953
+            ],
+            [
+              -0.2048663,
+              51.5355732
+            ],
+            [
+              -0.2048061,
+              51.5355209
+            ]
+          ]
+        ]
+      },
+      "id": "way/97966888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/99379777",
+        "addr:city": "London",
+        "addr:housenumber": "33-35",
+        "addr:postcode": "EC1R 4QL",
+        "addr:street": "Exmouth Market",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "yes",
+        "building:levels": "4",
+        "fhrs:id": "417625",
+        "name": "GAIL's",
+        "shop": "bakery",
+        "source": "Bing;photographic_survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1093678,
+              51.5259433
+            ],
+            [
+              -0.1094225,
+              51.525916
+            ],
+            [
+              -0.1093503,
+              51.525858
+            ],
+            [
+              -0.1092939,
+              51.5258858
+            ],
+            [
+              -0.1092429,
+              51.5259121
+            ],
+            [
+              -0.1093174,
+              51.5259701
+            ],
+            [
+              -0.1093678,
+              51.5259433
+            ]
+          ]
+        ]
+      },
+      "id": "way/99379777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/154543920",
+        "building": "yes",
+        "name": "Gail's",
+        "shop": "bakery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1234281,
+              51.5796435
+            ],
+            [
+              -0.1233449,
+              51.5796278
+            ],
+            [
+              -0.1233289,
+              51.5796596
+            ],
+            [
+              -0.1234363,
+              51.5796793
+            ],
+            [
+              -0.1234281,
+              51.5796435
+            ]
+          ]
+        ]
+      },
+      "id": "way/154543920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/157779574",
+        "addr:city": "London",
+        "addr:housenumber": "128",
+        "addr:postcode": "W1F 8ZL",
+        "addr:street": "Wardour Street",
+        "building": "retail",
+        "building:levels": "4",
+        "fhrs:confidence_management": "5",
+        "fhrs:hygiene": "0",
+        "fhrs:id": "412196",
+        "fhrs:local_authority_id": "00688/0128/0/000",
+        "fhrs:rating": "4",
+        "fhrs:structural": "10",
+        "name": "Gail's",
+        "phone": "+44 20 7287 1324",
+        "postal_code": "W1F 8ZL",
+        "roof:colour": "grey",
+        "roof:levels": "1",
+        "shop": "bakery",
+        "source": "Bing;photographic_survey",
+        "website": "https://gailsbread.co.uk/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1344793,
+              51.5142671
+            ],
+            [
+              -0.1344546,
+              51.5142636
+            ],
+            [
+              -0.1343084,
+              51.5143074
+            ],
+            [
+              -0.1343388,
+              51.5143491
+            ],
+            [
+              -0.1343712,
+              51.5143405
+            ],
+            [
+              -0.1343594,
+              51.5143254
+            ],
+            [
+              -0.1343809,
+              51.514319
+            ],
+            [
+              -0.134391,
+              51.5143352
+            ],
+            [
+              -0.1345078,
+              51.5142999
+            ],
+            [
+              -0.1344793,
+              51.5142671
+            ]
+          ]
+        ]
+      },
+      "id": "way/157779574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/199398427",
+        "addr:city": "London",
+        "addr:housenumber": "64",
+        "addr:postcode": "NW3 1QH",
+        "addr:street": "Hampstead High Street",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "yes",
+        "building:levels": "4",
+        "building:material": "brick",
+        "name": "GAIL's",
+        "roof:levels": "1",
+        "shop": "bakery",
+        "source": "Bing;photograph",
+        "website": "https://gailsbread.co.uk/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1779201,
+              51.5561691
+            ],
+            [
+              -0.1780341,
+              51.556113
+            ],
+            [
+              -0.178018,
+              51.5561026
+            ],
+            [
+              -0.177981,
+              51.5560759
+            ],
+            [
+              -0.1778678,
+              51.5561302
+            ],
+            [
+              -0.1778617,
+              51.556139
+            ],
+            [
+              -0.1778633,
+              51.5561443
+            ],
+            [
+              -0.1779201,
+              51.5561691
+            ]
+          ]
+        ]
+      },
+      "id": "way/199398427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/204019336",
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "350",
+        "addr:postcode": "SW18 1SS",
+        "addr:street": "Old York Road",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "retail",
+        "building:levels": "3",
+        "building:material": "brick",
+        "fhrs:id": "298029",
+        "name": "GAIL's",
+        "phone": "+44 20 8870 8280",
+        "shop": "bakery",
+        "source": "Bing;photograph",
+        "source:addr": "FHRS Open Data"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1888151,
+              51.4600955
+            ],
+            [
+              -0.188895,
+              51.4601585
+            ],
+            [
+              -0.1889245,
+              51.460144
+            ],
+            [
+              -0.1889802,
+              51.4601879
+            ],
+            [
+              -0.1890261,
+              51.4601653
+            ],
+            [
+              -0.1888903,
+              51.4600584
+            ],
+            [
+              -0.1888151,
+              51.4600955
+            ]
+          ]
+        ]
+      },
+      "id": "way/204019336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/205702897",
+        "addr:city": "London",
+        "addr:housenumber": "282",
+        "addr:postcode": "W4 1PA",
+        "addr:street": "Chiswick High Road",
+        "building": "yes",
+        "building:levels": "1",
+        "check_date": "2023-02-05",
+        "name": "Gail's",
+        "opening_hours": "Mo-Su 06:45-19:30",
+        "payment:bancomat": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "phone": "+44 20 8995 2266",
+        "shop": "bakery",
+        "source": "Bing;photograph",
+        "website": "http://gailsbread.co.uk"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2599707,
+              51.4925685
+            ],
+            [
+              -0.2598829,
+              51.4925732
+            ],
+            [
+              -0.2598741,
+              51.4925916
+            ],
+            [
+              -0.2598921,
+              51.4926978
+            ],
+            [
+              -0.2599834,
+              51.4926906
+            ],
+            [
+              -0.2599707,
+              51.4925685
+            ]
+          ]
+        ]
+      },
+      "id": "way/205702897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/275448324",
+        "addr:city": "London",
+        "addr:country": "GB",
+        "addr:housenumber": "204",
+        "addr:postcode": "NW5 2AD",
+        "addr:street": "Kentish Town Road",
+        "amenity": "cafe",
+        "building": "retail",
+        "name": "Gail's Bakery",
+        "website": "https://gailsbread.co.uk/bakeries/kentish-town/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1408162,
+              51.548129
+            ],
+            [
+              -0.1410924,
+              51.5481545
+            ],
+            [
+              -0.1411108,
+              51.548097
+            ],
+            [
+              -0.1411035,
+              51.5480899
+            ],
+            [
+              -0.1410965,
+              51.5480831
+            ],
+            [
+              -0.1409863,
+              51.5480778
+            ],
+            [
+              -0.1409501,
+              51.548076
+            ],
+            [
+              -0.1408303,
+              51.548068
+            ],
+            [
+              -0.1408162,
+              51.548129
+            ]
+          ]
+        ]
+      },
+      "id": "way/275448324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/276045635",
+        "addr:city": "London",
+        "addr:housenumber": "11a",
+        "addr:postcode": "E1 6EA",
+        "addr:street": "Lamb Street",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "yes",
+        "name": "GAIL's",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0753361,
+              51.5200814
+            ],
+            [
+              -0.075411,
+              51.5200841
+            ],
+            [
+              -0.0754233,
+              51.5199411
+            ],
+            [
+              -0.0753467,
+              51.5199373
+            ],
+            [
+              -0.0753361,
+              51.5200814
+            ]
+          ]
+        ]
+      },
+      "id": "way/276045635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/291643503",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "brand:wikipedia": "en:Gail's",
+        "name": "GAIL's",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1242218,
+              51.524514
+            ],
+            [
+              -0.1241809,
+              51.5244452
+            ],
+            [
+              -0.1239952,
+              51.5244846
+            ],
+            [
+              -0.1240354,
+              51.5245536
+            ],
+            [
+              -0.1242218,
+              51.524514
+            ]
+          ]
+        ]
+      },
+      "id": "way/291643503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/294646436",
+        "check_date": "2022-07-12",
+        "level": "0",
+        "name": "Gail's",
+        "shop": "bakery",
+        "source": "photograph",
+        "website": "https://gailsbread.co.uk/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1319584,
+              51.5187661
+            ],
+            [
+              -0.1318508,
+              51.5188111
+            ],
+            [
+              -0.1319778,
+              51.5189479
+            ],
+            [
+              -0.1320519,
+              51.5189132
+            ],
+            [
+              -0.1320743,
+              51.5189038
+            ],
+            [
+              -0.1320555,
+              51.5188824
+            ],
+            [
+              -0.1319584,
+              51.5187661
+            ]
+          ]
+        ]
+      },
+      "id": "way/294646436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/374114306",
+        "addr:housenumber": "9",
+        "addr:postcode": "SW19 5DX",
+        "addr:street": "High Street",
+        "amenity": "cafe",
+        "building": "commercial",
+        "building:levels": "2",
+        "description": "Artisan Bakery",
+        "fhrs:id": "779664",
+        "name": "Gail's",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-18:00",
+        "outdoor_seating": "yes",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/bakeries/wimbledon-village/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2162464,
+              51.4243565
+            ],
+            [
+              -0.2161451,
+              51.424387
+            ],
+            [
+              -0.2161353,
+              51.4243916
+            ],
+            [
+              -0.2161304,
+              51.424396
+            ],
+            [
+              -0.2161291,
+              51.4244017
+            ],
+            [
+              -0.2161296,
+              51.4244065
+            ],
+            [
+              -0.2161328,
+              51.4244138
+            ],
+            [
+              -0.2161708,
+              51.4244517
+            ],
+            [
+              -0.2161896,
+              51.4244683
+            ],
+            [
+              -0.2163053,
+              51.4244212
+            ],
+            [
+              -0.2162464,
+              51.4243565
+            ]
+          ]
+        ]
+      },
+      "id": "way/374114306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/431675300",
+        "addr:city": "London",
+        "addr:housenumber": "250",
+        "addr:street": "Wimbledon Park Road",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "coffee;bakery",
+        "name": "Gail's",
+        "outdoor_seating": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2068636,
+              51.4446134
+            ],
+            [
+              -0.2067952,
+              51.4446874
+            ],
+            [
+              -0.2067881,
+              51.4447056
+            ],
+            [
+              -0.2067922,
+              51.4447231
+            ],
+            [
+              -0.2068085,
+              51.4447332
+            ],
+            [
+              -0.2068314,
+              51.4447376
+            ],
+            [
+              -0.2070934,
+              51.4447372
+            ],
+            [
+              -0.207092,
+              51.444695
+            ],
+            [
+              -0.206972,
+              51.444652
+            ],
+            [
+              -0.2068636,
+              51.4446134
+            ]
+          ]
+        ]
+      },
+      "id": "way/431675300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/497785765",
+        "addr:housenumber": "88-90",
+        "addr:postcode": "N6 5HX",
+        "addr:street": "Highgate High Street",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "retail",
+        "building:levels": "3",
+        "former_name": "The Corner Shop",
+        "name": "GAIL's",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/bakeries/highgate/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1488741,
+              51.5711051
+            ],
+            [
+              -0.1487912,
+              51.5711803
+            ],
+            [
+              -0.1488741,
+              51.5712233
+            ],
+            [
+              -0.1489894,
+              51.5712299
+            ],
+            [
+              -0.1489854,
+              51.5711591
+            ],
+            [
+              -0.1488741,
+              51.5711051
+            ]
+          ]
+        ]
+      },
+      "id": "way/497785765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/589649642",
+        "addr:city": "London",
+        "addr:housenumber": "49",
+        "addr:postcode": "SW13 9HH",
+        "addr:street": "Church Road",
+        "amenity": "cafe",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "retail",
+        "building:levels": "2",
+        "fhrs:id": "770073",
+        "name": "GAIL's",
+        "roof:levels": "1",
+        "roof:orientation": "across",
+        "shop": "bakery",
+        "source:addr": "FHRS Open Data",
+        "website": "https://gailsbread.co.uk/bakeries/barnes/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2445653,
+              51.4741942
+            ],
+            [
+              -0.2445256,
+              51.4741145
+            ],
+            [
+              -0.2444639,
+              51.4741264
+            ],
+            [
+              -0.2445037,
+              51.4742061
+            ],
+            [
+              -0.2445653,
+              51.4741942
+            ]
+          ]
+        ]
+      },
+      "id": "way/589649642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/595656384",
+        "addr:city": "London",
+        "addr:housenumber": "87",
+        "addr:postcode": "E9 7HJ",
+        "addr:street": "Lauriston Road",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "retail",
+        "building:colour": "brown",
+        "building:levels": "3",
+        "building:material": "brick",
+        "fhrs:id": "950818",
+        "name": "GAIL's",
+        "roof:colour": "darkgrey",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0446181,
+              51.5378376
+            ],
+            [
+              -0.0445941,
+              51.5377929
+            ],
+            [
+              -0.0444276,
+              51.5378312
+            ],
+            [
+              -0.0443845,
+              51.5378411
+            ],
+            [
+              -0.0444082,
+              51.5378831
+            ],
+            [
+              -0.0446181,
+              51.5378376
+            ]
+          ]
+        ]
+      },
+      "id": "way/595656384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640422845",
+        "addr:city": "Twickenham",
+        "addr:country": "GB",
+        "addr:housenumber": "35",
+        "addr:postcode": "TW1 3NR",
+        "addr:street": "Church Street",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "yes",
+        "building:levels": "2",
+        "check_date": "2023-04-16",
+        "fhrs:id": "1356740",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "Gail's Bakery",
+        "name": "GAIL's",
+        "opening_hours": "Mo-Su 07:00-19:00",
+        "outdoor_seating": "pedestrian_zone",
+        "outdoor_seating:comfort": "weather_protection",
+        "payment:american_express": "yes",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "roof:colour": "grey",
+        "shop": "bakery",
+        "toilets": "yes",
+        "toilets:access": "permissive",
+        "toilets:wheelchair": "yes",
+        "website": "https://gailsbread.co.uk/bakeries/twickenham/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.327664,
+              51.446563
+            ],
+            [
+              -0.3275842,
+              51.4464865
+            ],
+            [
+              -0.3275571,
+              51.4464967
+            ],
+            [
+              -0.3275158,
+              51.4464572
+            ],
+            [
+              -0.3274558,
+              51.4464814
+            ],
+            [
+              -0.3275004,
+              51.4465201
+            ],
+            [
+              -0.3274786,
+              51.4465286
+            ],
+            [
+              -0.32753,
+              51.4465773
+            ],
+            [
+              -0.3275587,
+              51.4466047
+            ],
+            [
+              -0.327664,
+              51.446563
+            ]
+          ]
+        ]
+      },
+      "id": "way/640422845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/974885001",
+        "addr:city": "London",
+        "addr:housenumber": "102-104",
+        "addr:postcode": "W6 7PD",
+        "addr:street": "Shepherds Bush Road",
+        "name": "GAIL's Bakery",
+        "opening_hours": "Mo-sa: 06:45-18:30; Su: 07:00-18:00",
+        "payment:apple_pay": "yes",
+        "payment:cards": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+44 20 7602 9233",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2223662,
+              51.499502
+            ],
+            [
+              -0.2223742,
+              51.499398
+            ],
+            [
+              -0.2222649,
+              51.4993913
+            ],
+            [
+              -0.2222295,
+              51.4994075
+            ],
+            [
+              -0.2222242,
+              51.4994986
+            ],
+            [
+              -0.2223662,
+              51.499502
+            ]
+          ]
+        ]
+      },
+      "id": "way/974885001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1011224071",
+        "addr:city": "London",
+        "addr:housenumber": "5",
+        "addr:postcode": "SW15 1NH",
+        "addr:street": "Lacy Road",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "retail",
+        "fhrs:id": "1043183",
+        "name": "GAIL's",
+        "shop": "bakery",
+        "source:addr:postcode": "FHRS Open Data",
+        "website": "https://gailsbread.co.uk/bakeries/putney/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.2161512,
+              51.464082
+            ],
+            [
+              -0.2161338,
+              51.4641179
+            ],
+            [
+              -0.2160966,
+              51.4641853
+            ],
+            [
+              -0.2162324,
+              51.464217
+            ],
+            [
+              -0.2162855,
+              51.464112
+            ],
+            [
+              -0.2161512,
+              51.464082
+            ]
+          ]
+        ]
+      },
+      "id": "way/1011224071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1039675528",
+        "addr:city": "London",
+        "addr:housenumber": "70",
+        "addr:postcode": "N10 3HN",
+        "addr:street": "Fortis Green Road",
+        "amenity": "cafe",
+        "brand:website": "https://gailsbread.co.uk",
+        "brand:wikidata": "Q110662562",
+        "building": "retail",
+        "changing_table": "yes",
+        "changing_table:count": "1",
+        "changing_table:fee": "no",
+        "changing_table:location": "unisex_toilet",
+        "fhrs:id": "1081610",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Gail's",
+        "outdoor_seating": "yes",
+        "payment:cash": "no",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1462421,
+              51.5901542
+            ],
+            [
+              -0.1461681,
+              51.5901206
+            ],
+            [
+              -0.1460181,
+              51.5902482
+            ],
+            [
+              -0.1460921,
+              51.5902818
+            ],
+            [
+              -0.1462421,
+              51.5901542
+            ]
+          ]
+        ]
+      },
+      "id": "way/1039675528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1084607142",
+        "addr:housenumber": "55-57",
+        "addr:street": "High Street",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "building": "yes",
+        "building:levels": "3",
+        "fhrs:id": "983825",
+        "name": "GAIL's",
+        "phone": "+44 20 8530 0598",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0259647,
+              51.5787706
+            ],
+            [
+              0.0258699,
+              51.5787798
+            ],
+            [
+              0.0257619,
+              51.5787503
+            ],
+            [
+              0.0257604,
+              51.5787431
+            ],
+            [
+              0.0257587,
+              51.5787348
+            ],
+            [
+              0.0258423,
+              51.5786335
+            ],
+            [
+              0.0259649,
+              51.5786671
+            ],
+            [
+              0.0259562,
+              51.5786771
+            ],
+            [
+              0.0260232,
+              51.5786978
+            ],
+            [
+              0.0259647,
+              51.5787706
+            ]
+          ]
+        ]
+      },
+      "id": "way/1084607142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1105250386",
+        "addr:city": "London",
+        "addr:housenumber": "167 Haverstock Hill",
+        "addr:postcode": "NW3 4QT",
+        "addr:street": "Haverstock Hill",
+        "building": "apartments",
+        "fhrs:authority": "Camden",
+        "fhrs:id": "639839",
+        "fhrs:local_authority_id": "77763",
+        "name": "Gail's",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1644117,
+              51.5499195
+            ],
+            [
+              -0.1644623,
+              51.5499531
+            ],
+            [
+              -0.1646404,
+              51.5498493
+            ],
+            [
+              -0.1645898,
+              51.5498157
+            ],
+            [
+              -0.1644117,
+              51.5499195
+            ]
+          ]
+        ]
+      },
+      "id": "way/1105250386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/583286335",
+        "addr:housenumber": "31-32",
+        "addr:postcode": "SW11 3RA",
+        "addr:street": "Battersea Square",
+        "cuisine": "bakery",
+        "delivery": "yes",
+        "fhrs:id": "297911",
+        "name": "Gail's",
+        "operator": "Gail's",
+        "phone": "+44 20 7924 5177",
+        "shop": "bakery",
+        "takeaway": "yes",
+        "website": "https://gailsbread.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1751343,
+          51.4748058
+        ]
+      },
+      "id": "node/583286335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/678240182",
+        "addr:city": "Richmond",
+        "addr:housenumber": "13",
+        "addr:postcode": "TW9 3PT",
+        "addr:street": "Station Parade",
+        "amenity": "cafe",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "construction": "retail",
+        "fhrs:id": "1411422",
+        "name": "GAIL's",
+        "opening_hours": "Mo-Su 07:00-18:00",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.286063,
+          51.4773102
+        ]
+      },
+      "id": "node/678240182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/983393989",
+        "addr:city": "London",
+        "addr:housenumber": "5",
+        "addr:street": "Circus Road",
+        "amenity": "cafe",
+        "fhrs:confidence_management": "5",
+        "fhrs:hygiene": "0",
+        "fhrs:id": "413344",
+        "fhrs:local_authority_id": "01154/0005/0/000",
+        "fhrs:rating": "5",
+        "fhrs:structural": "0",
+        "name": "GAIL's Bakery",
+        "postal_code": "NW8 6NX",
+        "source:addr": "FSA Food Hygiene Ratings Database",
+        "source:postcode": "FSA Food Hygiene Ratings Database",
+        "website": "https://gailsbread.co.uk/bakeries/st-johns-wood/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1716866,
+          51.5337562
+        ]
+      },
+      "id": "node/983393989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1420456394",
+        "addr:city": "London",
+        "addr:housenumber": "240-242",
+        "addr:postcode": "W8 6ND",
+        "addr:street": "Kensington High Street",
+        "amenity": "cafe",
+        "email": "hsk@gailsbread.co.uk",
+        "name": "Gail's",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su 08:00-19:00",
+        "phone": "+44 20 7348 3924",
+        "website": "https://gailsbread.co.uk/bakeries"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1997826,
+          51.4989153
+        ]
+      },
+      "id": "node/1420456394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1634404174",
+        "addr:country": "GB",
+        "addr:housenumber": "134",
+        "addr:postcode": "EN5 5XW",
+        "addr:street": "High Street",
+        "amenity": "cafe",
+        "brand": "Gail's Bakery",
+        "brand:website": "https://gailsbread.co.uk",
+        "brand:wikidata": "Q110662562",
+        "fhrs:id": "1559850",
+        "name": "Gail's",
+        "outdoor_seating": "yes",
+        "payment:cash": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2015755,
+          51.6551723
+        ]
+      },
+      "id": "node/1634404174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1968296874",
+        "addr:housenumber": "64",
+        "addr:postcode": "SW11 6QL",
+        "addr:street": "Northcote Road",
+        "fhrs:id": "298233",
+        "name": "Gail's",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1662904,
+          51.4584945
+        ]
+      },
+      "id": "node/1968296874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2323839026",
+        "addr:city": "London",
+        "addr:housenumber": "4-6",
+        "addr:street": "Seymour Place",
+        "name": "Gail's",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/bakeries/seymour-place/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1609444,
+          51.514585
+        ]
+      },
+      "id": "node/2323839026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4318369465",
+        "addr:city": "Richmond",
+        "addr:housename": "Lichfield Terrace",
+        "addr:housenumber": "13",
+        "addr:postcode": "TW9 1AS",
+        "addr:street": "Sheen Road",
+        "amenity": "cafe",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "fhrs:id": "905936",
+        "level": "0",
+        "name": "GAIL's",
+        "shop": "bakery",
+        "source:addr": "FHRS Open Data"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3003843,
+          51.4611965
+        ]
+      },
+      "id": "node/4318369465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5552343719",
+        "addr:housenumber": "21",
+        "addr:postcode": "N6 6QX",
+        "addr:street": "Swain's Lane",
+        "amenity": "cafe",
+        "name": "Gail's Bakery",
+        "opening_hours": "Mo-Fr 07:30-19:00, 08:00-19:00",
+        "phone": "+44 20 8348 5293",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1494459,
+          51.5620676
+        ]
+      },
+      "id": "node/5552343719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5858969686",
+        "amenity": "cafe",
+        "name": "Gail's",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1531995,
+          51.4426795
+        ]
+      },
+      "id": "node/5858969686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6429327326",
+        "addr:city": "London",
+        "addr:housenumber": "28",
+        "addr:postcode": "SE1 7ND",
+        "addr:street": "York Road",
+        "amenity": "cafe",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "GAIL's",
+        "opening_hours": "Mo-Sa 07:00-19:00; Su 08:00-19:00",
+        "outdoor_seating": "yes",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.116304,
+          51.502894
+        ]
+      },
+      "id": "node/6429327326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6712606286",
+        "addr:city": "London",
+        "addr:housenumber": "237",
+        "addr:postcode": "W9 1NJ",
+        "addr:street": "Elgin Avenue",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;bakery",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Gail's",
+        "outdoor_seating": "yes",
+        "website": "https://gailsbread.co.uk/bakeries/maida-vale/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1860242,
+          51.5300706
+        ]
+      },
+      "id": "node/6712606286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7062214284",
+        "addr:housenumber": "12",
+        "addr:street": "Westbourne Grove",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "check_date": "2022-09-18",
+        "name": "GAIL's",
+        "phone": "+44 20 7243 4051",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/bakeries/westbourne-grove/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1891762,
+          51.5157768
+        ]
+      },
+      "id": "node/7062214284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7870976197",
+        "addr:housenumber": "103",
+        "addr:street": "Gloucester Road",
+        "name": "GAIL's Bakery",
+        "phone": "+44 20 7207 5305",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1820472,
+          51.4938974
+        ]
+      },
+      "id": "node/7870976197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8085831689",
+        "addr:housenumber": "45",
+        "addr:postcode": "SW7 2LQ",
+        "addr:street": "Thurloe Street",
+        "contact:email": "southken@gailsbread.co.uk",
+        "contact:phone": "+44 20 7581 2033",
+        "name": "Gail's",
+        "phone": "+44 20 7584 2152",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/bakeries/south-kensington/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.174501,
+          51.494461
+        ]
+      },
+      "id": "node/8085831689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8210477934",
+        "addr:housenumber": "341",
+        "addr:street": "Fulham Road",
+        "name": "GAIL's",
+        "phone": "+44 20 7352 8842",
+        "shop": "bakery",
+        "website": "https://gailsbread.co.uk/bakeries/fulham-road/?diss=0.4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1807197,
+          51.4860343
+        ]
+      },
+      "id": "node/8210477934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9379765858",
+        "addr:city": "London",
+        "addr:housenumber": "12",
+        "addr:postcode": "N1C 4DN",
+        "addr:street": "Handyside Street",
+        "amenity": "cafe",
+        "name": "Gail's Bakery",
+        "website": "https://gailsbread.co.uk/bakeries/kings-cross/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1246864,
+          51.5374402
+        ]
+      },
+      "id": "node/9379765858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9519425871",
+        "addr:housenumber": "15",
+        "addr:street": "City North Place",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "fhrs:id": "1439859",
+        "name": "GAIL's",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1072119,
+          51.5644928
+        ]
+      },
+      "id": "node/9519425871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10266440537",
+        "addr:city": "London",
+        "addr:housenumber": "25",
+        "addr:postcode": "SE10 9JB",
+        "addr:street": "Nelson Road",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "check_date": "2023-05-07",
+        "currency:GBP": "yes",
+        "fhrs:id": "1409167",
+        "level": "0",
+        "name": "GAIL's",
+        "opening_hours:signed": "no",
+        "operator": "Gail's",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "second_hand": "no",
+        "shop": "bakery",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0081514,
+          51.4810388
+        ]
+      },
+      "id": "node/10266440537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10280308668",
+        "addr:city": "London",
+        "addr:housenumber": "3",
+        "addr:postcode": "SE3 9LA",
+        "addr:street": "Blackheath Village",
+        "addr:suburb": "Blackheath",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "check_date": "2023-02-05",
+        "currency:GBP": "yes",
+        "fhrs:id": "744728",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "GAIL's",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "second_hand": "no",
+        "shop": "bakery",
+        "source": "survey",
+        "source:addr": "FHRS Open Data"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0093488,
+          51.4657213
+        ]
+      },
+      "id": "node/10280308668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10304600709",
+        "internet_access": "wlan",
+        "name": "Gail's",
+        "operator": "Gail's",
+        "shop": "bakery",
+        "website": "http://gails.co.uk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0811946,
+          51.498569
+        ]
+      },
+      "id": "node/10304600709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10822472804",
+        "addr:housenumber": "262",
+        "addr:street": "High Holborn",
+        "amenity": "cafe",
+        "check_date": "2023-04-18",
+        "name": "Gail's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1169709,
+          51.5177509
+        ]
+      },
+      "id": "node/10822472804"
+    }
+  ]
+}

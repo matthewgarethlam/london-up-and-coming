@@ -1,0 +1,381 @@
+---
+title: "gails"
+author: "Matthew Lam"
+date: "2023-05-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Read in Raw Data
+```{r}
+library(geojsonio)
+library(tidyverse)
+library(tmap)
+library(sf)
+library(sp)
+library(rgdal)
+library(rgeos)
+library(janitor)
+library(RColorBrewer)
+library(spdep)
+library(spatstat)
+cafes <- st_read("osm_points_clean/cafes.geojson")
+chicken <- st_read("osm_points_clean/chicken.shp")
+gails <- st_read("osm_points_clean/gails.shp")
+waitrose <- st_read("osm_points_clean/waitrose.shp")
+```
+
+
+## Data Cleaning
+```{r}
+
+
+
+#London Shapefiles
+ldnb <- readOGR("ESRI" ,"London_Borough_Excluding_MHW")
+plot(ldnb)
+
+ldnb <- st_as_sf(ldnb)
+
+#preliminary: points on a map, cafes
+tm_shape(ldnb)+
+tm_polygons("white", border.col="grey", lwd=1)+
+tm_shape(cafes)+
+tm_dots(col="red")+
+  tm_layout(title="Cafes")
+  
+#preliminary: points on a map, chicken
+tm_shape(ldnb)+
+tm_polygons("white", border.col="grey", lwd=1)+
+tm_shape(chicken)+
+tm_dots(col="blue")+
+  tm_layout(title="Chicken Shops")
+
+
+#waitrose
+tm_shape(ldnb)+
+tm_polygons("white", border.col="grey", lwd=1)+
+tm_shape(waitrose)+
+tm_dots(col="darkgreen")+
+  tm_layout(title="Waitrose")
+
+#gails
+tm_shape(ldnb)+
+tm_polygons("white", border.col="grey", lwd=1)+
+tm_shape(gails)+
+tm_dots(col="purple")+
+  tm_layout(title="Gails")
+  
+
+#create list of objects to iterate
+objectlist <- list(cafes, chicken, gails, waitrose)
+  
+#fixing projections, convert efverything into sf
+ldnb <- st_transform(ldnb, crs=27700)
+for (object in objectlist){
+  object <- st_as_sf(object)
+  object <- st_transform(object, crs=st_crs(ldnb))
+  st_crs(object)=st_crs(ldnb)
+  print(st_crs(object))
+  return(object)
+  
+}
+
+
+#remove the points which lie outside of London
+for (object in objectlist){
+  object <- object %>% st_intersection(ldnb)
+  return(object)
+}
+
+```
+
+
+## KDE
+```{r}
+library(ggmap)
+library(stringr)
+library(viridis)
+
+# extract coordinates 
+gails <- st_as_sf(gails)
+gails_xy <- gails %>%
+    st_coordinates() %>%
+  as.data.frame()
+plot(gails_xy)
+
+cafes <- st_as_sf(cafes)
+cafes_xy <- cafes %>%
+    st_coordinates() %>%
+  as.data.frame()
+plot(cafes_xy)
+
+
+
+window <- as.owin(ldnb)
+
+plot(ldnb)
+plot(gails, add=T)
+gails_ppp <- ppp(x = gails_xy[, 1], y = gails_xy[, 2], window = window)
+
+plot(gails_ppp)
+
+
+
+##ggmap approach
+london_bbox <- c(-0.587769,51.316881,0.291138,51.669148)
+
+londonmap <- get_stamenmap(london_bbox, zoom = 10, maptype = "toner-lite")
+ggmap(londonmap)
+
+#check the points
+ggplot() +
+  geom_point(data = cafes_xy, aes(x = X, y = Y), alpha = .05)
+
+#basic heatmap
+ggplot() +
+  stat_density2d(data = cafes_xy, aes(x = X, y = Y, fill = ..density..), geom = 'tile', contour = F, alpha = .5, bins=500)
+
+
+ggmap(londonmap) +
+   stat_density2d(data = cafes_xy, aes(x = X, y = Y, fill = ..density..), geom = 'tile', contour = F, alpha=0.5, bins=100)  +
+  scale_fill_viridis(option = 'inferno')
+
+```
+
+
+## hegaons
+```{r}
+cafes <- st_as_sf(cafes)
+plot(st_geometry(cafes))
+
+cafes <- as_Spatial(cafes)
+plot(cafes)
+
+#read in hexagon
+
+
+londonhexbig <- st_read("hexgrids/londonhexgrid.shp")
+londonhexsmall<- st_read("hexgrids/londonhexgridsmall.shp")
+
+setwd("~/Google Drive/GIS Portfolio/New Flat Maps 2023")
+londonhexbig <- st_read("londonhexgrid1.5K.shp")
+
+londonhexbig <- st_read("londonhexgrid1.5K.shp")
+
+plot(st_geometry(londonhexbig)) #big one looks better
+plot(st_geometry(londonhexsmall))
+
+# ldnb<- readOGR("ESRI" ,"London_Borough_Excluding_MHW")
+# ldnb <- st_as_sf(ldnb)
+# plot(st_geometry(ldnb))
+# area_honeycomb_grid <-
+#   st_make_grid(st_geometry(ldnb ) , what="polygons", square=FALSE, cellsize=30)
+# plot(area_honeycomb_grid) #this is just a sheet of grids
+
+#point in polygon count for cafes
+#align the crs of points with the grid
+st_crs(londonhexbig) #bng
+cafes <- st_as_sf(cafes)
+cafes <- st_transform(cafes, crs=27700)
+londonhexbig <- st_transform(londonhexbig, crs=27700)
+st_crs(cafes) = st_crs(londonhexbig)
+
+ 
+#point in poly count
+londonhexbig$cafes_count <-
+  lengths(st_intersects(londonhexbig, st_geometry(cafes)))
+
+range(londonhexbig$cafes_count)
+
+#point in poly count for chickenshops
+chicken <- st_as_sf(chicken)
+chicken <- st_transform(chicken, crs=27700)
+st_crs(chicken) = st_crs(londonhexbig)
+
+londonhexbig$chicken_count <-
+  lengths(st_intersects(londonhexbig, st_geometry(chicken)))
+
+
+range(londonhexbig$chicken)
+
+
+#inspect
+tmap_mode("view")
+tm_shape(londonhexbig)+
+  tm_fill(col="cafes_count",
+          palette="-magma",
+          style="jenks",
+          n=6,
+          id="grid_id",
+          showNA=FALSE,
+          alpha=0.6)+
+  tm_borders(lwd=0.7, col="black")+
+  tm_layout(frame=F, legend.outside=T)+
+  tm_shape(cafes, col="red")+
+  tm_dots(col="red")
+
+
+#fixing cafes crs
+ldnhexwgs84 <- st_transform(londonhexbig, crs=4326)
+cafes <- st_transform(cafes, crs=4326)
+chicken <- st_transform(chicken, crs=4326)
+
+ldnhexwgs84$cafes_count <-
+  lengths(st_intersects(ldnhexwgs84, st_geometry(cafes)))
+
+ldnhexwgs84$chicken_count <-
+  lengths(st_intersects(ldnhexwgs84, st_geometry(chicken)))
+
+pal1 <- c("#d2fbd4","#a5dbc2","#7bbcb0","#559c9e","#3a7c89","#235d72","#123f5a")
+pal2 <- c("#f3e79b","#fac484","#f8a07e","#eb7f86","#ce6693","#a059a0","#5c53a5")
+pal3 <- c("#fcde9c","#faa476","#f0746e","#e34f6f","#dc3977","#b9257a","#7c1d6f")
+
+tmap_mode("plot")
+
+tm_shape(ldnhexwgs84)+
+  tm_fill(col="cafes_count",
+          palette="-magma",
+          style="jenks",
+          n=6,
+          id="grid_id",
+          showNA=FALSE,
+          alpha=0.6)+
+  tm_borders(lwd=0.7, col="black")+
+  tm_layout(frame=F, legend.outside=T)
+
+
+
+tm_shape(ldnhexwgs84)+
+  tm_fill(col="chicken_count",
+          palette="-magma",
+          style="jenks",
+          n=6,
+          id="grid_id",
+          showNA=FALSE,
+          alpha=0.6)+
+  tm_borders(lwd=0.7, col="black")+
+  tm_layout(frame=F, legend.outside=T)
+
+
+
+
+```
+
+
+
+# bivariate
+```{r}
+library(biscale)
+
+
+
+#create classes
+# create 3 buckets for cafes
+ldnhexwgs84$cafes_count %>%
+  quantile(probs = seq(0, 1, length.out = 4)) -> quantiles_cafes
+
+quantiles_cafes[1]<-2
+quantiles_cafes[2]<-7
+quantiles_cafes[3]<-16
+quantiles_cafes[4]<-33
+quantiles_cafes[5]<-67
+
+# create 3 buckets for blood
+ldnhexwgs84$chicken_count %>%
+  quantile(probs = seq(0, 1, by = 0.25), length.out=4) -> quantiles_chicken
+
+quantiles_chicken[1]<-0
+quantiles_chicken[2]<-1
+quantiles_chicken[3]<-2
+quantiles_chicken[4]<-3
+quantiles_chicken[5]<-6
+
+# create color scale that encodes two variables
+# red for Area and blue for POP
+# the special notation with gather is due to readibility reasons
+bivariate_color_scale <- tibble(
+  "3 - 3" = "#3F2949", # high cafe, high chicken
+  "2 - 3" = "#435786",
+  "1 - 3" = "#4885C1", # low cafe, high chicken
+  "3 - 2" = "#77324C",
+  "2 - 2" = "#806A8A", # medium cafe, medium chicken
+  "1 - 2" = "#89A1C8",
+  "3 - 1" = "#AE3A4E", # high cafe, low chicken
+  "2 - 1" = "#BC7C8F",
+  "1 - 1" = "#CABED0" # low cafe, low chicken
+) %>%
+  gather("group", "fill")
+
+
+# cut into groups defined above and join fill
+ldnhexwgs84 %<>%
+  mutate(
+    cafe_quantiles = cut(
+      cafes_count,
+      breaks = quantiles_cafes,
+      include.lowest = TRUE
+    ),
+    chicken_quantiles = cut(
+      chicken_count,
+      breaks = quantiles_chicken,
+      include.lowest = TRUE
+    ),
+    # by pasting the factors together as numbers we match the groups defined
+    # in the tibble bivariate_color_scale
+    group = paste(
+      as.numeric(cafe_quantiles), "-",
+      as.numeric(chicken_quantiles)
+    )
+  ) %>%
+  # we now join the actual hex values per "group"
+  # so each municipality knows its hex value based on the his gini and avg
+  # income value
+  left_join(bivariate_color_scale, by = "group")
+
+ldnhexwgs84$fill.y.y
+
+
+ldnhexwgs84$fill.y.y <- ifelse(is.na(ldnhexwgs84$fill.y.y)==TRUE, "#CABED0",ldnhexwgs84$fill.y.y)
+library(ggthemes)
+map <- ggplot(
+  # use the same dataset as before
+  data = ldnhexwgs84
+  ) +
+  
+  # color municipalities according to their gini / income combination
+  geom_sf(
+    aes(
+      fill = ldnhexwgs84$fill.y.y
+    ),
+    # use thin white stroke for municipalities
+    color = "white",
+    size = 0.1
+  ) +
+  scale_fill_identity()+
+  # add the theme
+  theme_map()
+
+ggsave("bivariate.pdf")
+map
+
+```
+
+
+## using a ratio
+```{r}
+ldnhexwgs84$cafechickenratio <- ldnhexwgs84$cafes_count/ldnhexwgs84$chicken_count
+
+ldnhexwgs84$cafechickenratio <- ifelse(ldnhexwgs84$cafechickenratio==NaN, 0, ldnhexwgs84$cafechickenratio)
+
+range(ldnhexwgs84$cafes_count)
+
+range(ldnhexwgs84$chicken_count)
+```
+
+
+
+
